@@ -18,8 +18,8 @@ var time = nowHour + ":" + nowMin + "," + nowSec;　//裏で使う時間(時間+
     const Minures = M.value; //inputから分値を抜き出す
 
 if ( Hours + ':' + Minures + ',0' == time) {  
-    confirm('時間だよ')  
-    }
+    confirm('時間だよ');
+    };
 
 
     console.log(Hours + ':' + Minures);
