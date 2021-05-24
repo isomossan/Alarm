@@ -25,6 +25,6 @@ if ( Hours + ':' + Minures + ',0' == time) {
     console.log(Hours + ':' + Minures);
 };
 
-setInterval(timer,500)
+setInterval(timer,100)
 
 
