@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,18 +13,30 @@
     <title>alarm</title>
     <link rel="stylesheet" href="timer.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Display&display=swap" rel="stylesheet">
-    <link rel="icon" href="https://user-images.githubusercontent.com/83933546/123914886-dc69d580-d9ba-11eb-8860-e159e928ffe4.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Display&display=swap" rel="stylesheet">
+    <link rel="icon"
+        href="https://user-images.githubusercontent.com/83933546/123914886-dc69d580-d9ba-11eb-8860-e159e928ffe4.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Loop:ital@1&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <p>alarm</p>
-    <p id="time-display"></p>
-
-    <input id="h" type="text" size="2" maxlength="2" >  
-    <input id="m" type="text" size="2" maxlength="2" >
-
+    <header id="header">
+        <div id="headerDiv">
+            <h5>Alarm</h5>
+        </div>
+    </header>
+    <main id="main">
+        <h3 id="time-display"></h3>
+        <label for="setting">
+            <h3 id="setTimeDisplay">⚙️</h3>
+        </label>
+        <input id="setting" type="time">
+    </main>
     <script src="timer.js"></script>
-    
+
 </body>
+
 </html>
