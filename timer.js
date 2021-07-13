@@ -1,30 +1,37 @@
-const H = document.getElementById('h');
-const M = document.getElementById('m');
+const setTime = document.getElementById('setting');
+
+function timer() {
+    var nowTime = new Date(); //  現在日時を得る
+    var nowH = "00" + nowTime.getHours(); // 時を抜き出す
+    var nowM = "00" + nowTime.getMinutes(); // 分を抜き出す
+    var nowS = "00" + nowTime.getSeconds(); //秒を抜き出す
+
+    var Sec = nowTime.getSeconds();
+
+    var nowHour = nowH.slice(-2);
+    var nowMin = nowM.slice(-2);
+    var nowSec = nowS.slice(-2);
+
+    var msg = nowHour + ":" + nowMin + ":" + nowSec;　//表示する時間(時間+分)
+    document.getElementById("time-display").innerHTML = msg; //時間を表示させる
+
+    var time = nowHour + ":" + nowMin + ":" + Sec;　//裏で使う時間(時間+分+秒)
 
 
-function timer(){
-var nowTime = new Date(); //  現在日時を得る
-var nowHour = nowTime.getHours(); // 時を抜き出す
-var nowMin  = nowTime.getMinutes(); // 分を抜き出す
-var nowSec = nowTime.getSeconds(); // 秒を抜き出す
-  
-var msg = nowHour + ":" + nowMin + "." + nowSec;　//表示する時間(時間+分)
-document.getElementById("time-display").innerHTML = msg; //時間を表示させる
 
-var time = nowHour + ":" + nowMin + "," + nowSec;　//裏で使う時間(時間+分+秒)
-
-
-    const Hours = H.value; //inputから時値を抜き出す
-    const Minures = M.value; //inputから分値を抜き出す
-
-if ( Hours + ':' + Minures + ',0' == time) {  
-    confirm('時間だよ');
+    const setting = setTime.value;
+    if (setting + ":" + 1 == time) {
+        confirm('時間だよ');
     };
 
+    var settingTime = "⚙️" + setting
 
-    console.log(Hours + ':' + Minures);
+    document.getElementById("setTimeDisplay").innerHTML = settingTime
+
+
 };
 
-setInterval(timer,100)
 
 
+
+setInterval(timer, 500);
