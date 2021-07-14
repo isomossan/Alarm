@@ -31,3 +31,7 @@ h3{
 main{
     margin: 1rem;
 }
+
+#setting{
+display: none;
+}
