@@ -20,18 +20,17 @@ function timer() {
 
 
     const setting = setTime.value;
-    if (setting + ":" + 1 == time) {
-        confirm('時間だよ');
+
+    var settingTime = "⚙️" + setting;
+    document.getElementById("setTimeDisplay").innerHTML = settingTime;
+
+    var alarm = new Audio('Alarm.mp3');
+    if (setting + ":" + 0 == time) {
+        alarm.play();
+        setTimeout("confirm('時間です')", 100)
+
     };
-
-    var settingTime = "⚙️" + setting
-
-    document.getElementById("setTimeDisplay").innerHTML = settingTime
-
-
 };
 
+setInterval(timer, 1000);
 
-
-
-setInterval(timer, 500);
