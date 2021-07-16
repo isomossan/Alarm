@@ -14,7 +14,7 @@ header{
     margin: 0;
     display: flex;
     justify-content: flex-start;
-    border-radius: 0 0 10px 10px;
+    border-radius: 0 0 20px 20px;
     align-items: center;
     background:linear-gradient(0deg,black,rgb(27, 27, 27));
 }
@@ -32,8 +32,6 @@ main{
     margin: 1rem;
 }
 
-#setting{
-　　 background: black;
-    color: black;
-
+#edit{
+    display: none;
 }
