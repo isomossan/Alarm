@@ -1,5 +1,18 @@
 const setTime = document.getElementById('setting');
 
+function edit() {
+    const edit = document.getElementById('edit');
+
+
+    if (edit.checked) {
+        var off = document.getElementById('setting');
+        off.style.display = 'inline';
+    } else {
+        var on = document.getElementById('setting');
+        on.style.display = 'none';
+    };
+};
+
 function timer() {
     var nowTime = new Date(); //  現在日時を得る
     var nowH = "00" + nowTime.getHours(); // 時を抜き出す
@@ -30,7 +43,9 @@ function timer() {
         setTimeout("confirm('時間です')", 100)
 
     };
+
+
 };
 
 setInterval(timer, 1000);
-
+setInterval(edit, 100);
