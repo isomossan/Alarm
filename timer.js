@@ -1,17 +1,17 @@
 const setTime = document.getElementById('setting');
 
-function edit() {
-    const edit = document.getElementById('edit');
+// function edit() {
+//     const edit = document.getElementById('edit');
 
 
-    if (edit.checked) {
-        var off = document.getElementById('setting');
-        off.style.display = 'inline';
-    } else {
-        var on = document.getElementById('setting');
-        on.style.display = 'none';
-    };
-};
+//     if (edit.checked) {
+//         var off = document.getElementById('setting');
+//         off.style.display = 'inline';
+//     } else {
+//         var on = document.getElementById('setting');
+//         on.style.display = 'none';
+//     };
+// };
 
 function timer() {
     var nowTime = new Date(); //  現在日時を得る
@@ -35,7 +35,7 @@ function timer() {
     const setting = setTime.value;
 
     var settingTime = "⚙️" + setting;
-    document.getElementById("setTimeDisplay").innerHTML = settingTime;
+    // document.getElementById("setTimeDisplay").innerHTML = settingTime;
 
     var alarm = new Audio('Alarm.mp3');
     if (setting + ":" + 0 == time) {
@@ -48,4 +48,4 @@ function timer() {
 };
 
 setInterval(timer, 1000);
-setInterval(edit, 100);
+setInterval(edit, 1000);
