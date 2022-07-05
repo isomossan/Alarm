@@ -1,13 +1,12 @@
-body{
+body {
     margin: 0;
-    background-color:black;
-    color:darkgoldenrod;
+    background-color: black;
+    color: darkgoldenrod;
     font-family: 'Big Shoulders Stencil Display', cursive;
     font-size: 50px
-    
 }
 
-header{
+header {
     border-bottom: 3px solid darkgoldenrod;
     width: auto;
     height: auto;
@@ -16,25 +15,39 @@ header{
     /* justify-content: flex-start; */
     border-radius: 0 0 20px 20px;
     align-items: center;
-    background:linear-gradient(0deg,black,rgb(27, 27, 27));
+    background: linear-gradient(0deg, black, rgb(27, 27, 27));
 }
 
-#headerDiv{
+#headerDiv {
     padding: 1rem;
 }
 
-h3{
-    
+h3 {
+    margin: 0;
     color: darkgoldenrod;
 }
 
-main{
+main {
     margin: 1rem;
 }
 
-#edit{
+#setting {
+    background-color: black;
+    color: darkgoldenrod;
+    /* height: 20px; */
+    font-size: 50px;
+    font-family: 'Big Shoulders Stencil Display', cursive;
+    border: 0;
+}
+
+#edit {
     display: none;
 }
-#URL{
+
+#URL {
     color: darkgoldenrod;
+}
+
+#setTime {
+    display: flex;
 }
